@@ -16,11 +16,11 @@ Reads features.txt and uses only the measurements on the mean and standard devia
 
 Reads activity_labels.txt and applies human readable activity names to name the activities in the data set.
 
-Labels the data set with descriptive names. (Names are converted to lower case; underscores and brackets are removed.)
+Labels the data set with descriptive names.
 
-Merges the features with activity labels and subject IDs. The result is saved as tidyData.txt.
+Merges the features with activity labels and subject IDs.
 
-The average of each measurement for each activity and each subject is merged to a second data set. The result is saved as tidyData2.txt.
+The average of each measurement for each activity and each subject is merged to a second data set. 
 
 Variables
 
