@@ -79,11 +79,8 @@ require("reshape2")
  
  # Create a second, independent tidy data set with the average of each variable for each activity and each subject 
  
- install.packages("plyr");
- install.packages("Hmisc")
- library("plyr")
- library(Hmisc)
- averages_data <- ddply(all_data, .(subject, activity), function(x) colMeans(x[, 1:66])) 
- 
+ install.packages(plyr)
 
+ library(plyr)
+ averages_data <- ddply(all_data, .(subject, activity), function(x) colMeans(x[, 1:66])) 
  write.table(averages_data, "averages_data.txt", row.name=FALSE) 
